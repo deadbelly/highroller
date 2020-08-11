@@ -17,15 +17,6 @@ function setOfRolls(n, m){
   return rollList
 }
 
-function diceTest(n){
-  var possibleRolls = []
-  while (possibleRolls.length < n){
-    possibleRolls.push(rand(n))
-     var possibleRolls = [...new Set(possibleRolls)]
-  }
-return possibleRolls
-}
-
 
 //Tests and Logs
 console.log(new Roll(3, 6, +3))
