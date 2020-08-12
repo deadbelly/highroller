@@ -16,7 +16,3 @@ function setOfRolls(n, m){
   }
   return rollList
 }
-
-
-//Tests and Logs
-console.log(new Roll(3, 6, +3))
