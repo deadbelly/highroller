@@ -19,6 +19,5 @@ function setOfRolls(n, m){
 
 
 //Tests and Logs
-$('#myNumber').html(new Roll(1, 20, 0);
 console.log(new Roll(3, 6, +3))
 console.log(new Roll(1, 20, 0))
