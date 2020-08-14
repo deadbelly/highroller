@@ -5,6 +5,7 @@ function Roll(sides, number, mod){
   this.total = mod + this.rolls.reduce(function(a, b){
     return a+b
   })
+  document.getElementById("myRoll").innerHTML = this.total
 }
 
 
@@ -17,7 +18,4 @@ function setOfRolls(n, m){
   return rollList
 }
 
-
-//Tests and Logs
-console.log(new Roll(3, 6, +3))
-console.log(new Roll(1, 20, 0))
+window.onload = getNumber
