@@ -18,4 +18,4 @@ function setOfRolls(n, m){
   return rollList
 }
 
-window.onload = getNumber
+window.onload = new Roll(1, 20, 0)
