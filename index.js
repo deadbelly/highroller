@@ -19,3 +19,5 @@ function setOfRolls(n, m){
 
 var myRoll = new Roll(1, 20, 0)
 var rollTotal = myRoll.total
+
+document.getElementById("myRoll").value = myRoll
