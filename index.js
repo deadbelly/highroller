@@ -7,6 +7,7 @@ function Roll(sides, number, mod){
   })
 }
 
+  document.write(new Roll(1, 20, 0).total)
 
 //Support Functions
 function setOfRolls(n, m){
