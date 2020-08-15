@@ -16,6 +16,3 @@ function setOfRolls(n, m){
   }
   return rollList
 }
-
-var myRoll = new Roll(1, 20, 0)
-var rollTotal = myRoll.total
