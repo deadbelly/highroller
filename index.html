@@ -9,7 +9,15 @@
 <body>
     <h1>
       ROLL: <script type="text/javascript">
-        document.write(Math.random())
+        function Roll(sides, number, mod){
+          this.rolls = setOfRolls(number, sides)
+          this.modifier = mod
+          this.total = mod + this.rolls.reduce(function(a, b){
+            return a+b
+          })
+        }
+
+        document.write(new Roll(1, 20, 0).total)
       </script>
     </h1>
 </body>
