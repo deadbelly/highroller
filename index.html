@@ -8,17 +8,7 @@
 
 <body>
     <h1>
-      ROLL: <script type="text/javascript">
-        function Roll(sides, number, mod){
-          this.rolls = setOfRolls(number, sides)
-          this.modifier = mod
-          this.total = mod + this.rolls.reduce(function(a, b){
-            return a+b
-          })
-        }
-
-        document.write(new Roll(1, 20, 0).total)
-      </script>
+      ROLL: <script src="index.js" charset="utf-8"></script>
     </h1>
 </body>
 </html>
