@@ -1,11 +1,15 @@
 <html>
 <head>
-  <script src="~/index.js"></script>
+  <script type="text/javascript" src="index.js"></script>
 </head>
 
 <body>
     <h1>
-      <button onclick="javascript: document.write(testRoll.total)">Roll!</button>
+      <button onclick="javascript:
+      var test = new Dice(1, 20, 0);
+      test.rollThem();
+      document.write(test.total);
+      >Roll!</button>
     </h1>
 </body>
 </html>
