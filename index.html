@@ -5,10 +5,11 @@
 
 <body>
     <h1>
-      ROLL: <script>document.write(test.total)</script>
+      <p id="roll"></p>
       <button onclick="javascript:
       var test = new Dice(1, 20, 0);
-      test.rollThem();"
+      test.rollThem();
+      document.getElementById("roll").innerHTML = test.total;"
       >Roll!</button>
     </h1>
 </body>
