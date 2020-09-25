@@ -34,7 +34,14 @@ class Dice{
 }
 
 function roll(){
-  var dice = new Dice(1, 20, 0)
+  let num = document.getElementById("number").value
+
+let mod = document.getElementById("mod").value
+
+let sides = document.getElementById("sides").value
+
+
+  const dice = new Dice(num, sides, mod)
   dice.rollThem()
-document.getElementById("space").value = dice.total
+document.getElementById("result").value = dice.total
 }
