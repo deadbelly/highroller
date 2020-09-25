@@ -43,5 +43,5 @@ let sides = document.getElementById("sides").value
 
   const dice = new Dice(num, sides, mod)
   dice.rollThem()
-document.getElementById("result").value = dice.total
+document.getElementById("result").value = parseInt(dice.total.toString(), 10)
 }
