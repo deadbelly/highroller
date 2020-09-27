@@ -34,14 +34,14 @@ class Dice{
 }
 
 function roll(){
-  let num = document.getElementById("number").value
+  let num = parseInt(document.getElementById("number").value)
 
-let mod = document.getElementById("mod").value
+  let mod = parseInt(document.getElementById("mod").value)
 
-let sides = document.getElementById("sides").value
+  let sides = parseInt(document.getElementById("sides").value)
 
 
   const dice = new Dice(num, sides, mod)
   dice.rollThem()
-document.getElementById("result").value = parseInt(dice.total.toString(), 10)
+  document.getElementById("result").value = parseInt(dice.total.toString(), 10)
 }
